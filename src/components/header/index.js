@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function Header() {
   return (
     <div>
-      <nav className="navbar navbar-light bg-white">
+      <nav className="navbar navbar-light bg-white justify-content-center">
         <a className="navbar-brand" href="#">
           <img
             src="https://i.pinimg.com/474x/e7/d1/ea/e7d1eaf746a2e1094815e36afe960513.jpg"
@@ -15,6 +15,13 @@ function Header() {
             alt=""
           />
           GOLF SCORECARD
+          <img
+            src="https://i.pinimg.com/474x/e7/d1/ea/e7d1eaf746a2e1094815e36afe960513.jpg"
+            width="30"
+            height="30"
+            className="d-inline-block align-top"
+            alt=""
+          />
         </a>
       </nav>
     </div>

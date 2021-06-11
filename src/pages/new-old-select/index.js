@@ -4,12 +4,12 @@ import Button from "../../components/button/index";
 
 function NewOld() {
   return (
-    <div>
+    <div className="justify-content-center">
       <div>
         <Button text="New Game" />
       </div>
       <div>
-        <Button text="View Old Games" />
+        <Button text="Old Games" />
       </div>
     </div>
   );

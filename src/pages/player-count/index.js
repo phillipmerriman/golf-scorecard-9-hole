@@ -5,8 +5,8 @@ import Button from "../../components/button";
 function PlayerCount() {
   return (
     <div>
-      <p>How Many Players?</p>
-      <select class="form-control">
+      <p className="my-1 mx-1">How Many Players?</p>
+      <select class="form-control my-1 mx-1">
         <option>2</option>
         <option>3</option>
         <option>4</option>

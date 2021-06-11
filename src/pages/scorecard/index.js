@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function Scorecard() {
   return (
     <div>
-      <table className="table table-bordered table-sm">
+      <table className="table table-bordered table-sm mx-2 my-2">
         <thead>
           <tr>
             <th scope="col">Hole</th>
