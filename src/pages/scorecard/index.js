@@ -4,9 +4,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function Scorecard() {
   const [totalScore1, setTotalScore1] = useState(0);
 
-  let [totalScore2, setTotalScore2] = useState(0);
+  const [totalScore2, setTotalScore2] = useState(0);
 
-  let [totalScore3, setTotalScore3] = useState(0);
+  const [totalScore3, setTotalScore3] = useState(0);
 
   useEffect(() => {
     console.log("render");
