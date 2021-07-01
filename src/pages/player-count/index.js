@@ -1,6 +1,5 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Button from "../../components/button";
 
 function PlayerCount(props) {
   return (

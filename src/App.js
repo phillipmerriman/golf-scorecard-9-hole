@@ -8,21 +8,19 @@ import Scorecard from "./pages/scorecard";
 
 function App() {
   const [newGame, setNewGame] = React.useState(false);
+
   return (
     <div className="bg-success">
       <Header />
       <div className="row">
         <div className="row">
           <div className="col-md-5"></div>
-          {/* <div className="col-md-2">
-            {
-              !newGame ? <NewOld setNewGame={setNewGame}/> : null
-            }
-          </div> */}
         </div>
-        {
-          newGame ? <PlayerCount setNewGame={setNewGame}/> : <NewOld setNewGame={setNewGame}/>
-        }
+        {newGame ? (
+          <PlayerCount setNewGame={setNewGame} />
+        ) : (
+          <NewOld setNewGame={setNewGame} />
+        )}
         {/* <div className="row">
           <div className="col-md-5"></div>
           <div className="col-md-3">
