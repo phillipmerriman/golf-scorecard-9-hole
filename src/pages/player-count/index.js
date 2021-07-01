@@ -2,9 +2,9 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "../../components/button";
 
-function PlayerCount() {
+function PlayerCount(props) {
   return (
-    <div>
+    <div className="justify-content-center">
       <p className="my-1 mx-1">How Many Players?</p>
       <select class="form-control my-1 mx-1">
         <option>2</option>
@@ -16,7 +16,18 @@ function PlayerCount() {
         <option>8</option>
       </select>
       <div>
-        <Button text="Submit" />
+        <button
+          class="btn btn-info my-1 mx-1"
+          onClick={() => console.log("Submit Clicked!!!!!!!!!!!!!!")}
+        >
+          Submit
+        </button>
+        <button
+          class="btn btn-info my-1 mx-1"
+          onClick={() => props.setNewGame(false)}
+        >
+          Go Back
+        </button>
       </div>
     </div>
   );
